@@ -633,7 +633,7 @@ define([
             mapPoint2 = this.map.toMap(pnt2);
             //set the screen point xmin, ymin, xmax, ymax
             this.shareOptionScreenPoint = mapPoint1.x + "," + mapPoint1.y + "," + mapPoint2.x + "," + mapPoint2.y;
-            /switch (featureOf) {
+            switch (featureOf) {
             case "mapclickpoint":
                 geometryPointData = new esri.geometry.Extent(parseFloat(window.location.href.toString().split("$mapClickPoint=")[1].split(",")[2]), parseFloat(window.location.href.toString().split("$mapClickPoint=")[1].split(",")[3]), parseFloat(window.location.href.toString().split("$mapClickPoint=")[1].split(",")[4]), parseFloat(window.location.href.toString().split("$mapClickPoint=")[1].split(",")[5].split("$")[0]), this.map.spatialReference);
                 break;
